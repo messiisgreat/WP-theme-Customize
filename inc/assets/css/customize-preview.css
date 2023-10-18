@@ -1,0 +1,71 @@
+/* button.customize-partial-edit-shortcut-button {
+        width: 20px;
+        height: 20px;
+        max-width: 20px !important;
+        max-height: 20px !important;
+        min-width: 20px !important;
+        min-height: 20px !important;
+        font-size: 13px !important;
+        padding: 0px;
+        line-height: 0px !important;
+        background: red !important;
+        position: absolute;
+        top: auto;
+        left: 0px;
+        box-shadow: 0px 0px 10px 0px #000 !important;
+        border: 1px solid #2271b1 !important;
+}
+button.customize-partial-edit-shortcut-buttonv svg {
+        font-size: 10px !important;
+}
+button.customize-partial-edit-shortcut-button svg {
+        color: #fff !important;
+        fill: #fff !important;
+        font-size: 10px !important;
+        padding: 1px;
+}
+
+
+span.customize-partial-edit-shortcut.customize-partial-edit-shortcut-yourseobook_header_main_navigation_master_menu_search_bar_master_display_control button {
+    width: 15px !important;
+    height: 15px !important;
+    position: fixed;
+    top: 20% !important;
+    left: unset !important;
+    right: 1%;
+    background: #fff !important;
+    color: #000 !important;
+    font-size: 14px !important;
+    padding: 10px !important;
+}
+
+span.customize-partial-edit-shortcut.customize-partial-edit-shortcut-yourseobook_header_main_navigation_master_menu_search_bar_master_display_control button:after {content: 'Search Box';width: 110px;display: block;position: fixed;top: -7%;right: 35px;background: #0c0fc4 !important;line-height: 0 !important;padding: 12px 20px !important;border-radius: 4px;color: #fee005;font-size: 12px;}
+
+span.customize-partial-edit-shortcut.customize-partial-edit-shortcut-yourseobook_header_main_navigation_master_menu_search_bar_master_display_control button svg {
+    position: fixed;
+    top: 0%;
+    color: red !IMPORTANT;
+    font-size: 14px !important;
+    background: red;
+    border-radius: 50px;
+    right: 0px;
+}
+
+.*/
+.customize-inside-control-row {
+  display: flex !important;
+  width: 14% !important;
+  float: left;
+  border: 1px solid #000;
+  overflow: hidden;
+  margin: 0px !important;
+  font-size: 8px;
+  text-align: center !important;
+  margin: 0px auto !important;
+  flex-direction: column-reverse;
+  height: 20px;
+  padding: 10px 0px 10px 0px !important;
+  line-height: 5px !important;
+  font-weight: 500;
+  color: #000;
+}

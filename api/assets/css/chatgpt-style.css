@@ -1,0 +1,28 @@
+/* Add your custom styles for ChatGPT here */
+
+.chatgpt-modal {
+  /* Styles for the modal container */
+  /* Example styles */
+  width: 400px;
+  height: 300px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  padding: 20px;
+}
+
+.chatgpt-input {
+  /* Styles for the input field */
+  /* Example styles */
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+}
+
+.chatgpt-output {
+  /* Styles for the output container */
+  /* Example styles */
+  margin-top: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  background-color: #f9f9f9;
+}

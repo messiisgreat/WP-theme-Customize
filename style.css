@@ -1,0 +1,16 @@
+/*
+Theme Name: Your SEO Book PRO
+Theme URI: https://seobookpro.com/
+Author: Dimitar Krumov CEO at SEO Book Pro
+Author URI: https://seobookpro.com/
+Description: SEO Book Pro Custom WordPress Business SEO Framework. This is Beta 1.0.47 Version. Crafted for Business and Business Services Types with all Specific Layouts and Valid Ranking Factors Needs for the Company to Present their Business Services online proper way with easy setup and managment options. SEO Book Pro is Custom WordPress and SEO Friendly WordPress Custom Template. The Layouts are Automated and Responsive Design based on the Device Types. The Theme is under development and not all features may work proper. If you see some bug please report to support@seobookpro.com - Documentation and Template Hierarchy can be seen  here.
+Version: 1.0.47
+Tested up to: 6.0.1
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: yourseobook
+Tags: API Integration, Responsive, SEO Ready, Custom Pages Layouts, 10 Custom Navigation Menus Included, Sidebar Widgets Ready, Custom Footer Widgets Ready, Social Links Ready, Custom CTA's Ready, Automatic Internal Linking from the Content Options, 20+ Rich Snippets Integrated, 30 Rank Factors Automated, Custom Home Page, Custom Locations Page/s, Custom Practice Area Page/s, Custom Post Types, Custom Single Page, Blog Archives, Other Archives, Custom Search Page, SEO Friendly 404 Page, Google Analytics Integration Ready, Google Search Console Integration
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+*/
+body.logged-in form#customize-controls.wp-full-overlay-sidebar { background: red !important; width: 500px !important; }

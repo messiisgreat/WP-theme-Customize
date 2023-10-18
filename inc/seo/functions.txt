@@ -1,0 +1,142 @@
+Remove unwanted metadata
+WordPress adds a lot of links and content to your site's <head> and HTTP headers. For most websites you can safely disable all of these, which can help to save bytes, electricity, and trees.
+
+Remove unwanted metadata
+Remove shortlinks
+Remove shortlinks
+Remove links to WordPress' internal 'shortlink' URLs for your posts. E.g.,
+<link rel="shortlink" href="https://www.example.com/?p=1" />
+Remove REST API links
+Remove REST API links
+Remove links to the location of your site’s REST API endpoints. E.g.,
+<link rel="https://api.w.org/" href="https://www.example.com/wp-json/" />
+Remove RSD / WLW links
+Remove RSD / WLW links
+Remove links used by external systems for publishing content to your blog. E.g.,
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://www.example.com/xmlrpc.php?rsd" />
+and
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://www.example.com/wp-includes/wlwmanifest.xml" />
+Remove oEmbed links
+Remove oEmbed links
+Remove links used for embedding your content on other sites. E.g.,
+<link rel="alternate" type="application/json+oembed" href="https://www.example.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.example.com%2Fexample-post%2F" />
+Remove generator tag
+Remove generator tag
+Remove information about the plugins and software used by your site. E.g.,
+<meta name="generator" content="WordPress 6.0.1" />
+Pingback HTTP header
+Pingback HTTP header
+Remove links which allow others sites to ‘ping’ yours when they link to you. E.g.,
+X-Pingback: https://www.example.com/xmlrpc.php
+Remove powered by HTTP header
+Remove powered by HTTP header
+Remove information about the plugins and software used by your site. E.g.,
+X-Powered-By: PHP/7.4.1
+Disable unwanted content formats
+WordPress outputs your content in many different formats, across many different URLs (like RSS feeds of your posts and categories). It’s generally good practice to disable the formats you’re not actively using.
+
+Disable unwanted content formats
+Remove global feed
+Remove global feed
+Remove URLs which provide an overview of your recent posts. E.g.,
+<link rel="alternate" type="application/rss+xml" title="Example Website - Feed" href="https://www.example.com/feed/" />
+Remove global comment feeds
+Remove global comment feeds
+Remove URLs which provide an overview of recent comments on your site. E.g.,
+<link rel="alternate" type="application/rss+xml" title="Example Website - Comments Feed" href="https://www.example.com/comments/feed/" />
+Also disables post comment feeds.
+Remove post comments feeds
+Remove post comments feeds
+Remove URLs which provide information about recent comments on each post. E.g.,
+<link rel="alternate" type="application/rss+xml" title="Example Website - Example post Comments Feed" href="https://www.example.com/example-post/feed/" />
+Remove post authors feeds
+Remove post authors feeds
+Remove URLs which provide information about recent posts by specific authors. E.g.,
+<link rel="alternate" type="application/rss+xml" title="Example Website - Posts by Example Author Feed" href="https://www.example.com/author/example-author/feed/" />
+Remove post type feeds
+Remove post type feeds
+Remove URLs which provide information about your recent posts, for each post type. E.g.,
+<link rel="alternate" type="application/rss+xml" title="Example Website - Movies Feed" href="https://www.example.com/movies/feed/" />
+Remove category feeds
+Remove category feeds
+Remove URLs which provide information about your recent posts, for each category. E.g.,
+<link rel="alternate" type="application/rss+xml" title="Example Website - News Category Feed" href="https://www.example.com/category/news/feed/" />
+Remove tag feeds
+Remove tag feeds
+Remove URLs which provide information about your recent posts, for each tag. E.g.,
+<link rel="alternate" type="application/rss+xml" title="Example Website - Blue Tag Feed" href="https://www.example.com/tag/blue/feed/" />
+Remove custom taxonomy feeds
+Remove custom taxonomy feeds
+Remove URLs which provide information about your recent posts, for each custom taxonomy. E.g.,
+<link rel="alternate" type="application/rss+xml" title="Example Website - Large size Feed" href="https://www.example.com/size/large/feed/" />
+Remove search results feeds
+Remove search results feeds
+Remove URLs which provide information about your search results. E.g.,
+<link rel="alternate" type="application/rss+xml" title="Example Website - Search Results for 'example' Feed" href="https://www.example.com/search/example/feed/rss2/" />
+Remove Atom / RDF feeds
+Remove Atom / RDF feeds
+Remove URLs which provide alternative (legacy) formats of all of the above. E.g.,
+<link rel="alternate" type="application/rss+xml" title="Example Website - Feed" href="https://www.example.com/feed/atom/" />
+Remove unused resources
+WordPress loads lots of resources, some of which your site might not need. If you’re not using these, removing them can speed up your pages and save resources.
+
+Remove unused resources
+Remove emoji scripts
+Remove emoji scripts
+Remove JavaScript used for converting emoji characters in older browsers.
+Remove WP-JSON API
+Remove WP-JSON API
+Add a ‘disallow’ rule to your robots.txt file to prevent crawling of WordPress' JSON API endpoints. E.g.,
+https://www.example.com/wp-json/
+and
+https://www.example.com/?rest_route=/
+Block unwanted bots
+Lots of web traffic comes from bots crawling the web. Some of these can be beneficial to your site or to your business, but some just waste resources. Blocking unwanted bots can save energy and help with site performance.
+
+Block unwanted bots
+Prevent Google AdsBot from crawling
+Prevent Google AdsBot from crawling
+Add a 'disallow' rule to your robots.txt file to prevent crawling by Google's AdsBot. You should only enable this setting if you're not using Google Ads on your site.
+Internal site search cleanup
+Your internal site search can create lots of confusing URLs for search engines, and can even be used as a way for SEO spammers to attack your site. Most sites will benefit from experimenting with these protections and optimizations, even if you don’t have a search feature in your theme.
+
+Internal site search cleanup
+Filter search terms
+Filter search terms
+Enables advanced settings for protecting your internal site search URLs.
+Max number of characters to allow in searches
+50
+Limit the length of internal site search queries to reduce the impact of spam attacks and confusing URLs. Please enter a number between 1 and 50.
+
+Filter searches with emojis and other special characters
+Filter searches with emojis and other special characters
+Block internal site searches which contain complex and non-alphanumeric characters, as they may be part of a spam attack.
+Filter searches with common spam patterns
+Filter searches with common spam patterns
+Block internal site searches which match the patterns of known spam attacks.
+Redirect pretty URLs to ‘raw’ formats
+Redirect pretty URLs to ‘raw’ formats
+Consolidates WordPress' multiple site search URL formats into the ?s= syntax. E.g.,
+https://www.example.com/search/cats
+will redirect to
+https://www.example.com/?s=cats
+Prevent crawling of internal site search URLs
+Prevent crawling of internal site search URLs
+Add a ‘disallow’ rule to your robots.txt file to prevent crawling of URLs like ?s=, /search/ and /page/*/?s=.
+Advanced: URL cleanup
+Users and search engines may often request your URLs whilst using query parameters, like ?color=red. These can be helpful for tracking, filtering, and powering advanced functionality - but they come with a performance and SEO ‘cost’. Sites which don’t rely on URL parameters might benefit from using these options.
+
+Advanced: URL cleanup
+Warning! These are expert features, so make sure you know what you're doing before using this setting. You might break your site. Read more about how your site can be affected.
+Optimize Google Analytics utm tracking parameters
+Optimize Google Analytics utm tracking parameters
+Replaces utm tracking parameters with the (more performant) # equivalent, via a 301 redirect. E.g.,
+https://www.example.com/?utm_medium=organic
+will be redirected to
+https://www.example.com/#utm_medium=organic
+Remove unregistered URL parameters
+Remove unregistered URL parameters
+Removes unknown URL parameters via a 301 redirect. E.g.,
+https://www.example.com/?unknown_parameter=yes
+will be redirected to
+https://www.example.com

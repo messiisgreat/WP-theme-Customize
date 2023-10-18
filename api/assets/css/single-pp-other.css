@@ -1,0 +1,85 @@
+blockquote {padding: 10px 31px;
+margin: 10px 0px 10px 0px;
+font-style: italic;
+font-weight: 300;
+color: #000;
+border-left: 1px solid #000;
+border-right: 1px solid #000;
+border-bottom: 1px solid #000;
+border-top: 1px solid #000;
+}
+blockquote::before{
+position: relative;
+display: block;
+color: #000;
+font-size: 20px;
+line-height: 0px;
+font-weight: 900;
+content: "''";
+top: -12px;
+background: #fff;
+z-index: 1;
+width: 50px !important;
+margin: 0px auto;
+height: 10px;
+text-align: center;
+}
+
+
+/* Above The Fold Custom CSS */
+.whats-inc {
+	color: black;
+	font-weight: 300;
+	border-right: 1px solid #000;
+	margin: 10px 0px 10px 0px;
+	text-align: start;
+	padding: 15px;
+	font-size: 16px !important;
+}
+.col-md-2.password, .col-md-2.username {
+	font-size: 24px;
+	display: flex;
+	width: 15%;
+	text-align: center;
+	float: none;
+	margin: 0px auto;
+	padding: 20px 0px 20px 0px;
+	flex-direction: column;
+	flex-wrap: wrap;
+	align-content: stretch;
+	justify-content: center;
+	align-items: center;
+}
+
+button#reg {
+	padding: 10px 20px;
+	position: relative;
+	margin: 35px auto;
+	height: auto;
+	line-height: 1.75rem;
+	border-radius: 62px;
+	border: 6px ridge #000;
+	background-color: #cc7e30;
+	color: #ffcfa0;
+	text-transform: uppercase;
+	font-weight: 300;
+	max-width: 70%;
+	background-image: linear-gradient(to bottom right, #5655aa, #39d109);
+	font-size: 30px;
+	width: 70%;
+	min-width: 70%;
+	box-shadow: 0px 0px 80px 0px #ffc009;
+	}
+button:hover#reg {
+        background-image: linear-gradient(to bottom right, #000000, #dfb538);
+        border: 6px outset;
+        border-color: #E91E63;
+        color: #fff;
+}
+
+button.sign-in-now{
+background: #000000;
+color: #ffffff;
+font-size: 36px;
+p
+}

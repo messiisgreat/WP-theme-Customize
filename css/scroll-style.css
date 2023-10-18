@@ -1,0 +1,43 @@
+/* Example styles to apply */
+#hooked{
+margin:90px 0px 90px 0px;
+padding:90px 0px 90px 0px;
+  background: #000;
+}
+
+.container-fluid.our-team {
+
+  color: #fff;
+  font-size: 20px;
+}
+
+.our-team h2.ot-title{
+color: #fff;
+font-weight: 300 !important;
+font-size: 43px;
+}
+h3.member-name-title {
+  font-size: 1.5vw;
+  color: #f0bc42;
+}
+
+img#ltm {
+    max-width: 100%;
+    width: 100%;
+    margin: 20px 0px 30px 0px;
+    box-shadow: 0px 20px 20px -20px #fff;
+}
+
+.member-box {
+  border: 1px dotted #ccc;
+  padding: 0px 20px 0px 20px;
+  margin: 0px 10px 60px 10px;
+  border-radius: 4px;
+  box-shadow: 0px 20px 20px -20px #fff;
+  width: 31.7%;
+}
+p.member-info-text {
+    font-size: 20px;
+}
+
+body.logged-in form#customize-controls.wp-full-overlay-sidebar { background: red !important; width: 500px !important; }
